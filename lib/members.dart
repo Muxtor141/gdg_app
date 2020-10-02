@@ -22,7 +22,7 @@ class _MembersState extends State<Members> {
     ref.child(speakers).once().then((DataSnapshot snap) {
      
       var keys = snap.value;
-      var data = snap.value;
+ 
       alldata.clear();
       for (var key in keys) {
        var socials =key['socials'];
@@ -34,7 +34,7 @@ class _MembersState extends State<Members> {
           socials[0]['link'],
      
           
-        );print(newList1);
+        );
 
         alldata.add(newList1);
       }

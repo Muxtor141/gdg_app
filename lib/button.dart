@@ -18,7 +18,7 @@ class Button extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ButtonTheme(
-        minWidth: 60,
+        minWidth: 80,
         height: 70,
         child: DecoratedBox(
             decoration: ShapeDecoration(color:Colors.white,
@@ -32,7 +32,7 @@ class Button extends StatelessWidget {
                   ;}
                   if(buttonText=='Speakers'){Navigator.of(context).push(MaterialPageRoute(builder: (context) =>Speaker()))
                   ;}
-                  if(buttonText=='Team'){Navigator.of(context).push(MaterialPageRoute(builder: (context) =>Members()))
+                  if(buttonText=='Team'){Navigator.of(context).push(MaterialPageRoute(builder: (context) =>Screen()))
                   ;}
                    if(buttonText=='Sponsors'){Navigator.of(context).push(MaterialPageRoute(builder: (context) =>Sponsors()))
                   ;}

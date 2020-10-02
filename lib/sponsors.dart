@@ -16,7 +16,7 @@ class _SponsorsState extends State<Sponsors> {
     DatabaseReference ref = FirebaseDatabase.instance.reference();
     ref.child('partners/1/logos').once().then((DataSnapshot snap) {
       var keys1 = snap.value;
-      var data = snap.value;
+ 
 
       alldata.clear();
       for (var key in keys1) {
@@ -47,7 +47,7 @@ class _SponsorsState extends State<Sponsors> {
           child: alldata.length == 0
               ? new Container(color: Colors.grey[400],child: Center(child: Text('Loading...')))
               : new ListView.builder(
-                  itemCount: alldata.length,
+                  itemCount: 5,
                   itemBuilder: (_, index) {
                     return UI(
                       alldata[index].sponsorLogo,

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_database/firebase_database.dart';
 import './list.dart';
-
+//tugatilmagan vaqt tudayli
 class Agenda extends StatefulWidget {
   @override
   _AgendaState createState() => _AgendaState();
@@ -105,7 +105,7 @@ ref.child('speakers').once().then((DataSnapshot snap) {
               children: <Widget>[
                  title1 == null ?  Container(child: Text("No  title")) : Expanded(flex:1,child: Container(margin: EdgeInsets.only(left: 15,top:10,right: 20),child:Text( title1,style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 15),))),
                spName == null ?  Container(child: Text("No name")) : Expanded(flex:1,child: Container(margin: EdgeInsets.only(right:15,bottom: 40),child:Text(spName,style: TextStyle(color: Colors.white54,fontSize: 13,fontWeight: FontWeight.w500 ),))),
-            
+             spName == null ?  Container(child: Text("No name")) : Expanded(flex:1,child: Container(margin: EdgeInsets.only(right:15,bottom: 40),child:Text(spJob,style: TextStyle(color: Colors.white54,fontSize: 15,fontWeight: FontWeight.w500 ),))),
                  
                        
                                                  

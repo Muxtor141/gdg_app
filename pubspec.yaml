@@ -22,6 +22,7 @@ environment:
 
 dependencies:
   flutter:
+    
     sdk: flutter
   firebase_core: ^0.4.0
   firebase_core_web: ^0.2.0
@@ -34,8 +35,6 @@ dependencies:
   google_fonts: ^0.2.0
   carousel_slider: ^2.2.1
   font_awesome_flutter: ^8.8.1
- 
-
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -46,11 +45,15 @@ dev_dependencies:
 
 # The following section is specific to Flutter.
 flutter:
+ 
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
-  uses-material-design: true
+  uses-material-design: true 
+#feel
+ 
+
 
   # To add assets to your application, add an assets section, like this:
   # An image asset can refer to one or more resolution-specific "variants", see

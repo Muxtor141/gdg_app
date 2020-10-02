@@ -1,13 +1,10 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 import './button.dart';
 import './carousel.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:firebase_database/firebase_database.dart';
-import './speakers.dart';
-import './members_screen.dart';
-import 'agenda.dart';
 
 //Turgunboev Abdumuxtor,
 //Bugun 24-sentabr,soat 23:01, 7 soat avval GDG DevFest App Hackatonga start berildi,o'z ishimni boshladim
@@ -33,13 +30,14 @@ class _GdgState extends State<Gdg> {
     'FAQ',
     'Locate Us',
 };
+
 var icons = <Widget>[
-IconButton(color: Colors.red[800],icon: FaIcon(FontAwesomeIcons.calendarAlt),onPressed: null,),
-IconButton(color: Colors.grey[500],icon: FaIcon(FontAwesomeIcons.userAlt), onPressed: ()=> print('hello')),
-IconButton(color:Colors.black54,icon: FaIcon(FontAwesomeIcons.users), onPressed: ()=> print('hello')),
-IconButton(color: Colors.green,icon: FaIcon(FontAwesomeIcons.handHoldingUsd), onPressed: ()=> print('hello')),
-IconButton(icon: FaIcon(FontAwesomeIcons.questionCircle), onPressed: null),
-IconButton(icon: FaIcon(FontAwesomeIcons.mapMarkedAlt), onPressed: null)
+Icon(Icons.calendar_today,color: Colors.red[800],size: 20,),
+Icon(Icons.person,color: Colors.yellow[800],size: 20,),
+Icon(Icons.group,color: Colors.black45,size: 20,),
+Icon(Icons.attach_money,color: Colors.green[800],size: 20,),
+Icon(Icons.info,color: Colors.blue[800],size: 20,),
+Icon(Icons.location_searching,color: Colors.grey[800],size: 20,),
 
 
 
@@ -101,10 +99,10 @@ IconButton(icon: FaIcon(FontAwesomeIcons.mapMarkedAlt), onPressed: null)
                     Row(
   mainAxisAlignment: MainAxisAlignment.center,
   children:  <Widget>[
-   IconButton(color: Colors.black,iconSize: 20,icon: FaIcon(FontAwesomeIcons.youtube), onPressed: null,),
-   IconButton(color: Colors.black,iconSize: 20,icon: FaIcon(FontAwesomeIcons.facebookF), onPressed: ()=> print('hello')),
-   IconButton(color: Colors.black,iconSize: 20,icon: FaIcon(FontAwesomeIcons.telegram), onPressed: ()=> print('hello')),
-   IconButton(color: Colors.black,iconSize: 20,icon: FaIcon(FontAwesomeIcons.instagram), onPressed: ()=> print('hello')),
+   IconButton(color: Colors.black,iconSize: 20,icon: FaIcon(FontAwesomeIcons.meetup), onPressed: ()=>launch('https://www.meetup.com/GDG-Tashkent/events/263696235/')),
+   IconButton(color: Colors.black,iconSize: 20,icon: FaIcon(FontAwesomeIcons.facebookF), onPressed: ()=> launch('https://www.facebook.com/gdgtashkent/')),
+   IconButton(color: Colors.black,iconSize: 20,icon: FaIcon(FontAwesomeIcons.twitter), onPressed: ()=> launch('https://twitter.com/gdgtashkent/')),
+   IconButton(color: Colors.black,iconSize: 20,icon: FaIcon(FontAwesomeIcons.instagram), onPressed: ()=> launch('https://www.instagram.com/gdgtashkent')),
 
      
    

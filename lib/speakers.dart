@@ -27,7 +27,7 @@ class _SpeakerState extends State<Speaker> {
           data[key]['country'],
           data[key]['shortBio']
         );
-        print(data);
+      
         alldata.add(newList1);
       }
 
@@ -38,7 +38,7 @@ class _SpeakerState extends State<Speaker> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Speakers',style: TextStyle(color: Colors.black),),
+      appBar: AppBar(title: Container(margin: EdgeInsets.only(left:80),child: Text('Speakers',style: TextStyle(color: Colors.black),)),
         backgroundColor: Colors.grey[400],
       ),
       body: Container(color: Colors.white,
